@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <!--
+    👇 تعليمات مهمة (HTML)
+    - هذا الملف مسؤول فقط عن البنية الهيكلية (Structure) للموقع.
+    - التنسيقات في styles.css — لا تضف CSS هنا.
+    - التفاعلات والحركات في script.js — لا تضف JavaScript هنا.
+    - لتغيير النصوص/الأقسام عدّل عناصر HTML فقط.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="كود أكاديمية – منصة عربية لتعلم البرمجة من الصفر إلى الاحتراف بالدورات الحديثة والتطبيقات العملية." />
+  <title>كود أكاديمية - منصة تعلم البرمجة</title>
+
+  <!-- أيقونات فاونت أويسوم -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-p1CmS8GfQhV4wH0Q4o5rjv2w3u0lqC1nYwB7H58kF0wqzjT3c0m3k2S6q7jJ0A1G4b8C3bG5f6h7i8j9k0l+Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- ملف التنسيقات الخارجي -->
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#home">تخطي إلى المحتوى</a>
+
+  <!-- ===================== Header ===================== -->
+  <header class="header" id="header" aria-label="رأس الصفحة">
+    <div class="container header__inner">
+      <a class="logo" href="#home" aria-label="الانتقال للرئيسية">
+        <i class="fas fa-code" aria-hidden="true"></i>
+        <span>كود أكاديمية</span>
+      </a>
+
+      <!-- زر قائمة الجوال -->
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="فتح القائمة">
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+        <span class="nav-toggle__bar" aria-hidden="true"></span>
+      </button>
+
+      <nav class="nav" id="primary-nav" aria-label="القائمة الرئيسية">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#home">الرئيسية</a></li>
+          <li><a class="nav__link" href="#courses">الدورات</a></li>
+          <li><a class="nav__link" href="#categories">التصنيفات</a></li>
+          <li><a class="nav__link" href="#about">عن الأكاديمية</a></li>
+          <li><a class="nav__link" href="#contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+      <div class="auth-buttons">
+        <button class="btn btn--ghost" data-action="login">تسجيل الدخول</button>
+        <button class="btn btn--primary" data-action="signup">إنشاء حساب</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== Hero ===================== -->
+  <section class="hero" id="home" aria-label="قسم البداية">
+    <div class="container hero__content" data-reveal>
+      <h1 class="hero__title">تعلم البرمجة من الصفر إلى الاحتراف</h1>
+      <p class="hero__subtitle">انضم إلى آلاف المطورين الذين تعلموا البرمجة من خلال دوراتنا المتكاملة والمحدثة باستمرار</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#courses">ابدأ التعلم الآن</a>
+        <a class="btn btn--outline" href="#courses">تصفح الدورات</a>
+      </div>
+    </div>
+    <!-- خلفيات زخرفية -->
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__orb" aria-hidden="true"></div>
+  </section>
+
+  <!-- ===================== Categories ===================== -->
+  <section class="section" id="categories" aria-label="تصنيفات الدورات">
+    <div class="container">
+      <header class="section__header" data-reveal>
+        <h2 class="section__title">تصنيفات الدورات</h2>
+        <p class="section__subtitle">اختر المجال الذي ترغب في تعلمه وابدأ رحلتك في عالم البرمجة</p>
+      </header>
+
+      <div class="grid grid--categories">
+        <!-- بطاقة -->
+        <article class="card" data-reveal>
+          <div class="card__icon"><i class="fab fa-html5" aria-hidden="true"></i></div>
+          <h3 class="card__title">تطوير الويب</h3>
+          <p class="card__text">تعلم HTML, CSS, JavaScript وبناء مواقع وتطبيقات ويب رائعة</p>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card__icon"><i class="fab fa-android" aria-hidden="true"></i></div>
+          <h3 class="card__title">تطوير التطبيقات</h3>
+          <p class="card__text">أنشئ تطبيقات أندرويد و iOS باستخدام Flutter و React Native</p>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card__icon"><i class="fas fa-database" aria-hidden="true"></i></div>
+          <h3 class="card__title">قواعد البيانات</h3>
+          <p class="card__text">تعلم SQL, MongoDB وتصميم قواعد البيانات الفعالة</p>
+        </article>
+
+        <article class="card" data-reveal>
+          <div class="card__icon"><i class="fas fa-robot" aria-hidden="true"></i></div>
+          <h3 class="card__title">الذكاء الاصطناعي</h3>
+          <p class="card__text">ادخل عالم AI وتعلم Python و Machine Learning</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Stats ===================== -->
+  <section class="section section--tint" aria-label="إحصائيات المنصة">
+    <div class="container">
+      <div class="stats" data-reveal>
+        <div class="grid grid--stats">
+          <div class="stat">
+            <div class="stat__number" data-counter="5000">0</div>
+            <div class="stat__label">طالب مسجل</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number" data-counter="50">0</div>
+            <div class="stat__label">دورة تدريبية</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number" data-counter="2000">0</div>
+            <div class="stat__label">ساعة تدريب</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number" data-counter="25">0</div>
+            <div class="stat__label">مدرب متميز</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Courses ===================== -->
+  <section class="section" id="courses" aria-label="أحدث الدورات">
+    <div class="container">
+      <header class="section__header" data-reveal>
+        <h2 class="section__title">أحدث الدورات</h2>
+        <p class="section__subtitle">اكتشف أحدث الدورات التدريبية المصممة خصيصاً لتطوير مهاراتك في البرمجة</p>
+      </header>
+
+      <div class="grid grid--courses">
+        <!-- بطاقة دورة -->
+        <article class="course" data-reveal>
+          <div class="course__media" aria-hidden="true">
+            <i class="fab fa-react"></i>
+          </div>
+          <div class="course__body">
+            <span class="badge badge--new">جديد</span>
+            <h3 class="course__title">تطوير تطبيقات React المتقدمة</h3>
+            <p class="course__desc">تعلم كيفية بناء تطبيقات ويب تفاعلية باستخدام React و Redux</p>
+            <div class="course__meta">
+              <span class="course__price">85,000 د.ع</span>
+              <span class="course__rating" aria-label="تقييم 4.7 من 5">★★★★☆ 4.7</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="course" data-reveal>
+          <div class="course__media" aria-hidden="true">
+            <i class="fab fa-python"></i>
+          </div>
+          <div class="course__body">
+            <span class="badge">متوفر</span>
+            <h3 class="course__title">Python للذكاء الاصطناعي</h3>
+            <p class="course__desc">ابدأ رحلتك في الذكاء الاصطناعي باستخدام Python و TensorFlow</p>
+            <div class="course__meta">
+              <span class="course__price">120,000 د.ع</span>
+              <span class="course__rating" aria-label="تقييم 4.9 من 5">★★★★★ 4.9</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="course" data-reveal>
+          <div class="course__media" aria-hidden="true">
+            <i class="fab fa-node-js"></i>
+          </div>
+          <div class="course__body">
+            <span class="badge badge--sale">خصم 20%</span>
+            <h3 class="course__title">تطوير APIs باستخدام Node.js</h3>
+            <p class="course__desc">تعلم كيفية إنشاء وتطوير RESTful APIs باستخدام Node.js و Express</p>
+            <div class="course__meta">
+              <span class="course__price">75,000 د.ع</span>
+              <span class="course__rating" aria-label="تقييم 4.5 من 5">★★★★☆ 4.5</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="footer" aria-label="تذييل الصفحة">
+    <div class="container footer__grid">
+      <section class="footer__col">
+        <h3>كود أكاديمية</h3>
+        <p class="footer__text">منصة تعليمية متقدمة لتعلم البرمجة وتطوير المهارات التقنية بأحدث الأساليب والتقنيات</p>
+        <div class="social">
+          <a class="social__link" href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a class="social__link" href="#" aria-label="X / Twitter"><i class="fab fa-twitter"></i></a>
+          <a class="social__link" href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a class="social__link" href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </section>
+
+      <nav class="footer__col" aria-label="روابط سريعة">
+        <h3>روابط سريعة</h3>
+        <ul class="footer__links">
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#courses">الدورات</a></li>
+          <li><a href="#categories">التصنيفات</a></li>
+          <li><a href="#about">عن الأكاديمية</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+      <section class="footer__col" aria-label="التصنيفات">
+        <h3>التصنيفات</h3>
+        <ul class="footer__links">
+          <li><a href="#">تطوير الويب</a></li>
+          <li><a href="#">تطوير التطبيقات</a></li>
+          <li><a href="#">قواعد البيانات</a></li>
+          <li><a href="#">الذكاء الاصطناعي</a></li>
+          <li><a href="#">أمن المعلومات</a></li>
+        </ul>
+      </section>
+
+      <address class="footer__col" aria-label="معلومات التواصل">
+        <h3>تواصل معنا</h3>
+        <ul class="footer__links">
+          <li><i class="fas fa-map-marker-alt"></i> بغداد، العراق</li>
+          <li><i class="fas fa-phone"></i> +964 770 123 4567</li>
+          <li><i class="fas fa-envelope"></i> info@codeacademy.iq</li>
+        </ul>
+      </address>
+    </div>
+    <div class="copyright">&copy; 2024 كود أكاديمية. جميع الحقوق محفوظة.</div>
+  </footer>
+
+  <!-- ملف السكربت الخارجي -->
+  <script src="./script.js" defer></script>
+</body>
+</html>
