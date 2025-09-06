@@ -24,3 +24,7 @@ The structure, organization, and readability of the code.
 
 🔹 Important Note:
 All project names, contact numbers, or social media links used in this demo are purely fictional and do not refer to any real entity or project. The sole purpose of this work is to evaluate the precision of the code and the elegance of the design.
+<img width="1470" height="832" alt="‏لقطة الشاشة ٢٠٢٥-٠٩-٠٦ في ٧ ٣٣ ٤٠ م" src="https://github.com/user-attachments/assets/7e7dbd21-183e-4dce-be12-7f6357ae09d6" />
+<img width="1470" height="832" alt="‏لقطة الشاشة ٢٠٢٥-٠٩-٠٦ في ٧ ٣٤ ٤١ م" src="https://github.com/user-attachments/assets/0c29d2ae-fc22-42bf-9ed9-2e404dbcaa08" />
+
+
